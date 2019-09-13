@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PostgreSQL Spec",
+	"patterns": [
+		{
+			"name": "keyword.control.pgspec",
+			"match": "\\b(setup|teardown|session|step|permutation)\\b"
+		},
+		{
+			"name": "string.quoted.double.pgspec",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pgspec",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "comment.line.pgspec",
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "^#.*"
+				}
+			]
+		},
+		{
+			"name": "meta.embedded.block.sql",
+			"contentName": "source.sql",
+			"begin": "{",
+			"end": "}",
+			"patterns": [
+				{
+					"include": "source.sql"
+				}
+			]
+		}
+	],
+	"scopeName": "source.pgspec"
+}
