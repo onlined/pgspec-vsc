@@ -1,8 +1,9 @@
 {
     "name": "pgspec",
+    "publisher": "onlined",
     "displayName": "pgspec",
     "description": "Language plugin for PostgreSQL isolation test spec files",
-    "version": "1.0",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.38.0"
     },
@@ -24,5 +25,9 @@
                 "meta.embedded.block.sql": "source.sql"
             }
         }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onlined/pgspec-vsc.git"
     }
 }
