@@ -5,4 +5,4 @@ VS Code language plugin for PostgreSQL isolation test spec files
 
 ## Installation
 
-You can use the [this Visual Studio Market link](https://marketplace.visualstudio.com/items?itemName=onlined.pgspec) to install this plugin
+You can use this [Visual Studio Market link](https://marketplace.visualstudio.com/items?itemName=onlined.pgspec) to install this plugin in VSCode
