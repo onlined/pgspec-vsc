@@ -27,8 +27,7 @@
 			]
 		},
 		{
-			"name": "meta.embedded.block.sql",
-			"contentName": "source.sql",
+			"contentName": "meta.embedded.block.sql",
 			"begin": "{",
 			"end": "}",
 			"patterns": [

@@ -22,7 +22,7 @@
             "scopeName": "source.pgspec",
             "path": "./syntaxes/pgspec.tmLanguage.json",
             "embeddedLanguages": {
-                "meta.embedded.block.sql": "source.sql"
+                "meta.embedded.block.sql": "sql"
             }
         }]
     },
