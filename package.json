@@ -3,7 +3,7 @@
     "publisher": "onlined",
     "displayName": "pgspec",
     "description": "Language plugin for PostgreSQL isolation test spec files",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.38.0"
     },
@@ -11,20 +11,29 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "pgspec",
-            "aliases": ["PostgreSQL Spec", "pgspec"],
-            "extensions": ["spec"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "pgspec",
-            "scopeName": "source.pgspec",
-            "path": "./syntaxes/pgspec.tmLanguage.json",
-            "embeddedLanguages": {
-                "meta.embedded.block.sql": "sql"
+        "languages": [
+            {
+                "id": "pgspec",
+                "aliases": [
+                    "PostgreSQL Spec",
+                    "pgspec"
+                ],
+                "extensions": [
+                    "spec"
+                ],
+                "configuration": "./language-configuration.json"
             }
-        }]
+        ],
+        "grammars": [
+            {
+                "language": "pgspec",
+                "scopeName": "source.pgspec",
+                "path": "./syntaxes/pgspec.tmLanguage.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.sql": "sql"
+                }
+            }
+        ]
     },
     "repository": {
         "type": "git",
